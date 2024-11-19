@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones Database Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #1f5f8b;
+        }
+
+        @media (max-width: 600px) {
+            button {
+                width: 80%;
+                padding: 12px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Smartphones Database Application</h1>
+    <p>Choose an option below:</p>
+
+    <button onclick="window.location.href='/show_tables'">View Tables</button>
+    <button onclick="window.location.href='/Queries'">Execute Custom Queries</button>
+</body>
+</html>

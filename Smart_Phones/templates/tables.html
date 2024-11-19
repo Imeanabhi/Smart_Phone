@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Tables</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Database Tables</h1>
+    <p>Click on any table name below to view its data:</p>
+    <ul>
+        {% for table in tables %}
+            <li><a href="/show_data/{{ table[0] }}">{{ table[0] }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/Queries">Go to Custom Queries</a>
+</body>
+</html>
